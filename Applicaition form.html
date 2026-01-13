@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💌 Valentine Application 💌</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffe1ec, #fff0f6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 25px;
+      width: 360px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4d88;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #ff4d88;
+      font-size: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 12px;
+      border: 1px solid #ffd1e1;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      background: #ff4d88;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Application Form 💘</h1>
+
+    <label>Your Name 💕</label>
+    <input type="text" placeholder="Cutest name ever" required>
+
+    <label>Why should I be your Valentine? 💌</label>
+    <textarea placeholder="Make it sweet 🥰" required></textarea>
+
+    <label>Ideal Valentine Date 🌹</label>
+    <select required>
+      <option value="">Choose one</option>
+      <option>Dinner & dessert 🍰</option>
+      <option>Movie night 🍿</option>
+      <option>Just us 💖</option>
+    </select>
+
+    <button onclick="submitForm()">Submit Application 💝</button>
+  </div>
+
+  <script>
+    function submitForm() {
+      window.location.href = "accepted.html";
+    }
+  </script>
+</body>
+</html>
